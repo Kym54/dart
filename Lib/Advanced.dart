@@ -1,4 +1,5 @@
 import 'positional_arguments.dart';
+import 'variables.dart';
 
 main(List <String> arguments){
   // parameters print
@@ -14,6 +15,33 @@ main(List <String> arguments){
   var result2 =findTheVolume(12,width: 33, height:17);
   print(result1);
   print(result2);
+// variables
+
+  if(saySomething == null){
+    print("it is ${isFalse}");
+  }else print("it is not ${isFalse}");
+
+  // numbers
+  var one = int.parse('3');
+  // changing a string to a double number
+  var doubleToString =double.parse('24.574');
+  print(one);
+  print(doubleToString);
+  if(one.isOdd && doubleToString.isFinite){
+    print("the first number is an odd number and the second one is a double"
+        "${doubleToString} and is a finite number");
+  }else print("it is an even number and the second one is not a double"
+      "${doubleToString} and non-finite number");
+
+  //Strings
+  String stringWithSingleQuote = 'I\'m a single quote';
+  String stringWithDoubleQuote ="I'm a double quote";
+  print("Using a delimiter in single quote -${stringWithSingleQuote} and using delimiter "
+      "in double quote - ${stringWithDoubleQuote}");
+  
+
+
+
 
   var newCar =new Car();
   newCar.carName ="Red Angel";
