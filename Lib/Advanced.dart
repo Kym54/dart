@@ -38,7 +38,24 @@ main(List <String> arguments){
   String stringWithDoubleQuote ="I'm a double quote";
   print("Using a delimiter in single quote -${stringWithSingleQuote} and using delimiter "
       "in double quote - ${stringWithDoubleQuote}");
-  
+  //OR LOGIC
+bool isIsTrue= true;
+bool isIsFalse = false;
+if(isIsFalse || isIsTrue){
+  print("it is true");
+}else print("it is false");
+// OR gives a true output
+// AND logic
+  bool isTrueTrue=true;
+  bool isFalseFalse=false;
+  if(isFalseFalse&& isTrueTrue){
+    print("it is true");
+  }else print("it is false");
+  // ANd logic always gives a false output
+
+
+
+
 
 
 
