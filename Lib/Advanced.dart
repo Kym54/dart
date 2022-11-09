@@ -43,7 +43,8 @@ bool isIsTrue= true;
 bool isIsFalse = false;
 if(isIsFalse || isIsTrue){
   print("it is true");
-}else print("it is false");
+}else
+  print("it is false");
 // OR gives a true output
 // AND logic
   bool isTrueTrue=true;
@@ -51,7 +52,72 @@ if(isIsFalse || isIsTrue){
   if(isFalseFalse&& isTrueTrue){
     print("it is true");
   }else print("it is false");
-  // ANd logic always gives a false output
+  // AND logic always gives a false output
+//Control Structures
+bool firstButtonTouch = true;
+bool secondButtonTouch = false;
+bool thirdButtonTouch = true;
+bool forthButtonTouch = false;
+if(firstButtonTouch) print("the giant starts running");
+else print("Tp stop the giant please touch the second button.");
+if(secondButtonTouch) print("The giant stops");
+else print("You have not touched the second button");
+print("Press any button to start the game.");
+if( thirdButtonTouch) print("The giant goes to sleep");
+else print("You have not touched any button.");
+if(forthButtonTouch) print("The giant wakes up");
+else print("You have not touched any button");
+
+//complexity if else statement
+
+  bool oneButtonTouch =true;
+  var oneButtonUntouch;
+  bool secButtonTouch = false;
+  bool threeButtonTouch =true;
+  bool fourButtonTouch =false;
+ // oneButtonUntouch ?? =oneButtonTouch;
+  oneButtonUntouch =false;
+
+  if(oneButtonUntouch == false || firstButtonTouch == true)
+    print("The giant is sleeping.");
+  else print("You need to wake up the giant. Touch the first button");
+  if (oneButtonTouch == true && oneButtonUntouch == false)
+    print("The giant starts running");
+  print("To stop the giant please touch the second button");
+  if((secButtonTouch == true && threeButtonTouch == true)
+    || fourButtonTouch ==false)
+    print("The giant stops");
+  else print("You have not touched the second button");
+  print("Touch any button to start the giant");
+  if(threeButtonTouch) print("The giant goes to sleep");
+  else
+    print("You have not touched any button");
+  if(fourButtonTouch) print("The giant wakes up");
+  else print("You have not touched any button");
+
+// Conditional Expressions
+  // Loops
+  //for loop
+
+  var proverb = StringBuffer('As Dark as a Dungeon');
+  for( var x = 0; x <=10; x++){
+    proverb.write("!");
+    print(proverb);
+  }
+
+Set mySetSet = {1,2,3};
+  var productsProduct ={
+    1:'TV',
+    2:'Refrigerator',
+    3:mySetSet.lookup(3),
+    4:'Tablet',
+    5:'Computer',
+  };
+  var userCollection ={"name": 'Samuel Kimani', 'Email':'samuelfwangui@gmail.com'};
+  productsProduct.forEach((x,y ) =>print("${x}: ${y}"));
+  userCollection.forEach((k,v) =>print('${k}: ${v}'));
+
+
 
 //ARRAYS
   List fruitCollection =['Mango', 'Kiwi', 'Grapes', 'Apples'];
@@ -96,6 +162,29 @@ print(myProducts['forth']);
     5:'Laptop',
   };
   print(mondayProducts[3]);
+
+  /*  arithmetic operators
+  add +
+  subtract -
+  divide /
+  multiple *
+  module %
+*/
+
+  int firstNum= 40;
+  int secondNum= 42;
+  if(firstNum != secondNum ){
+    print("$firstNum is not equal ro the $secondNum");
+  }else print("$firstNum is equal to $secondNum");
+
+  // Assignment operators
+
+  int firstNumb = 10;
+  int? secondNumb;
+  if (firstNumb ==10)print("The value of ${firstNumb}is set.");
+  if(secondNumb ==null)print("it is true");
+  //secondNumb ?? =firstNumb;
+  print(secondNumb);
 
   var newCar =new Car();
   newCar.carName ="Red Angel";
