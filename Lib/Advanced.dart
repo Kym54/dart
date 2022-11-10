@@ -1,4 +1,5 @@
 import 'positional_arguments.dart';
+import 'switch and case.dart';
 import 'understanding_loops.dart';
 import 'variables.dart';
 
@@ -15,6 +16,9 @@ main(List <String> arguments){
   // loop labels
   labelsLoop();
   loopContinue();
+
+  // switch cases
+  switchCases();
 
 
   // parameters print
