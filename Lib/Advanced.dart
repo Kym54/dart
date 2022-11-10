@@ -12,6 +12,10 @@ main(List <String> arguments){
   doWhileLoop();
   print("");
 
+  // loop labels
+  labelsLoop();
+  loopContinue();
+
 
   // parameters print
   print(defaultParameters("Samuel", "Githunguri"));
