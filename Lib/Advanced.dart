@@ -1,7 +1,18 @@
 import 'positional_arguments.dart';
+import 'understanding_loops.dart';
 import 'variables.dart';
 
 main(List <String> arguments){
+
+  // understanding loops
+  forLoopFunction();
+  print("");
+  whileLoopFunction();
+  print("");
+  doWhileLoop();
+  print("");
+
+
   // parameters print
   print(defaultParameters("Samuel", "Githunguri"));
   print(optionalParameters("Samuel", "From Githunguri"));
@@ -117,8 +128,17 @@ Set mySetSet = {1,2,3};
   productsProduct.forEach((x,y ) =>print("${x}: ${y}"));
   userCollection.forEach((k,v) =>print('${k}: ${v}'));
 
+  // While and Do-while
 
-
+var numNum =5;
+var factorial =1;
+print("The value of the variable 'num' is decreasing this way:");
+while (numNum>= 1){
+  factorial = factorial * numNum;
+  numNum --;
+  print("'=>' ${numNum}");
+}
+print("the factorial is  ${factorial}");
 //ARRAYS
   List fruitCollection =['Mango', 'Kiwi', 'Grapes', 'Apples'];
   var myFruits= [1,2,3,4];
@@ -202,4 +222,9 @@ class Car{
   bool isTurnedOn(bool){
     return false;
   }
+
+
+
+
+
 }
