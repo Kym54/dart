@@ -1,3 +1,4 @@
+import 'classes.dart';
 import 'positional_arguments.dart';
 import 'switch and case.dart';
 import 'understanding_loops.dart';
@@ -19,7 +20,17 @@ main(List <String> arguments){
 
   // switch cases
   switchCases();
-
+// oop
+var fatherBear =new Bear();
+fatherBear.numberOfFish=6;
+fatherBear.hourOfSleep=10;
+fatherBear.weightGain=fatherBear.numberOfFish*fatherBear.hourOfSleep;
+print("Father bear eats ${fatherBear.eatFish(fatherBear.numberOfFish)}"
+    "number of fish. and he sleeps for ${fatherBear.sleepAfterEatingFish(fatherBear.hourOfSleep)}"
+    "hours");
+print("Father bear has gaines ${fatherBear.weightGainig(fatherBear.weightGain)}"
+    "pounds of weight");
+  
 
   // parameters print
   print(defaultParameters("Samuel", "Githunguri"));
